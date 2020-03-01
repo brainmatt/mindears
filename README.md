@@ -36,11 +36,11 @@ The "Mind Monitor" app is a must-have thirdparty add-on app for the Muse headban
 
 
 ## MuseLSL
-My first approach was re-implementing and adapting MuseLSL (please see Url below) which provides direct access the Muse device from a computer but missing the pre-calulated wave frequency and eye blink detection. Also I successfully implemented the brainwave frequency calculation using Fast Fourier Transformation before I happily found the ready-implemented neurofeedback example included in the MuseLSL distribution. Anyway especially for bending/unbending the ears I planned to use the eye blink detection as an additional trigger next to the moving ears front and back.
+My first approach was re-implementing and adapting MuseLSL (please see Url below) which provides direct access the Muse device from a computer but missing the pre-calulated wave frequency and eye blink detection. Also I successfully implemented the brainwave frequency calculation using Fast Fourier Transformation before I happily found the ready-implemented neurofeedback example included in the MuseLSL distribution. Anyway especially for bending/unbending the ears I planned to use the eye blink detection as an additional trigger bending/unbending the ears next to the moving them front and back.
 
 
 ## MindEars server:
-The server receives the EEG data (only the alpha waves) from the Mind Monitor via an standard OSC stream (the specifications of this stream are availble on the Mind Monitor website - see Urls below). It smootes the data by calculating the averages of sequences of 50 samples to avoid any jumps. It also calculates the overall average of all received alpha wave data to re-calculate the dynamic limits of its state machine. For all changes of the brain state (e.g. from active to neutral) it queues commands to the mindear-client.
+The server receives the EEG data (only the alpha waves and eye blink detection) from the Mind Monitor via an standard OSC stream (the specifications of this stream are availble on the Mind Monitor website - see Urls below). It smoots the data by calculating the averages of sequences of 50 samples to avoid any jumps. It also calculates the overall average of all received alpha wave data to re-calculate the dynamic limits of its state machine. For all changes of the brain state (e.g. from active to neutral) it queues commands to the mindear-client.
 It also automatically starts the mindear-client as a sub-process. Both process are connected and serialized by a simple file-based built-in queuing system.
 
 Required python modules (install with pip3 in a python3 based python virtualenv)
