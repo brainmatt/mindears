@@ -4,6 +4,8 @@ A wearable robot imitating animal ears controlled by brainwaves collected by a M
 ## Introduction
 This is one of my fun projects regarding brain-computer interfaces.
 
+![](./mindears-project.jpg)
+
 It is based on:
 - a "Muse 2" device providing access to EEG data from your own brain
 - the "Mind Monitor" Android App receiving the EEG data from the Muse device and streaming it to a Computer
