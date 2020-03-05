@@ -5,7 +5,7 @@ A wearable robot imitating animal ears controlled by brainwaves collected by a M
 This is one of my fun projects regarding brain-computer interfaces.
 
 
-[![A wearable robot imitating animal ears controlled by brainwaves collected by a Muse 2 device](https://img.youtube.com/vi/MzWSQTIqmQg/0.jpg)](https://www.youtube.com/watch?v=MzWSQTIqmQg "A wearable robot imitating animal ears controlled by brainwaves collected by a Muse 2 device")
+[![Click for the introduction Youtube video: A wearable robot imitating animal ears controlled by brainwaves collected by a Muse 2 device](https://img.youtube.com/vi/MzWSQTIqmQg/0.jpg)](https://www.youtube.com/watch?v=MzWSQTIqmQg "Click for the introduction Youtube video: A wearable robot imitating animal ears controlled by brainwaves collected by a Muse 2 device")
 
 ![](./mindears-project.jpg)
 
